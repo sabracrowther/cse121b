@@ -56,7 +56,8 @@ document.querySelector('#divideNumbers').addEventListener("click", divideNumbers
 
 /* Decision Structure */
 let date = new Date();
-let year = date.getFullYear();
+let year;
+year = date.getFullYear();
 document.querySelector('#year').innerHTML = year;
 
 /* ARRAY METHODS - Functional Programming */
