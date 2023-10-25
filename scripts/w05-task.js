@@ -37,7 +37,7 @@ const getTemples = async () => {
     if(response.ok) {     
         templeList = await response.json();
         templeList.sort(compare);
-displayTemples(templeList);
+        displayTemples(templeList);
         
     }
     }

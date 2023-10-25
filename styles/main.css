@@ -71,7 +71,7 @@ h1 {
 }
 
 #gridly h1 {
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 h2 {
@@ -107,7 +107,7 @@ section {
     flex-direction: column;
     align-items: center;
     margin: 0 auto 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: none, rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #eee;
 }
@@ -132,7 +132,7 @@ input {
 input[type="button"] {
     padding: .5rem;
     background-color: #444;
-    color: white;
+    color: rgb(198, 156, 29);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -155,6 +155,10 @@ dt::before {
 dd {
     margin: 0 0 .5rem 2rem;
     font-size: smaller;
+}
+
+button {
+    text-align: left;
 }
 
 footer {
@@ -193,7 +197,7 @@ footer {
 .middle {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -226,12 +230,12 @@ footer {
     background-color: rgb(250, 225, 250, .5);
 }
 
-#sortBy {
+#difficulty {
     appearance: none;
     display: flex;
     padding: .5rem;
-    background-color: #eee;
-    color: #444;
+    background-color: #ed7c7c;
+    color: #0c0b0b;
     font-weight: 700;
     margin: 1rem auto;
     width: 200px;
@@ -246,7 +250,7 @@ footer {
     color: #eee;
 }
 
-#temples {
+#questions {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: .5rem;
@@ -254,19 +258,19 @@ footer {
     margin-bottom: 3rem;
 }
 
-#temples article {
+#questions article {
     height: 250px;
     margin: .5rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 2rem, rgba(0, 0, 0, .1);
     padding: 1rem;
-    background-color: #eee;
+    background-color: #f5e6da;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#temples h4 {
+#difficulty h4 {
     color: navy;
     font-size: smaller;
 }
@@ -278,6 +282,25 @@ footer {
     box-shadow: 0 0 30px #777;
     margin: .5rem;
 }
+
+#answer {
+    height: 50px;
+    margin: .5rem;
+    border: 2rem, rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #daf5e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#getQuestionButton {
+    background-color: #ed7070;
+    width: 150px;
+    height: 35px;
+}
+
+
 
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W06: Final Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+ 
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html" class="active">W5 Task</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>W06 Final Project</h1>
+    <h2>Trivia Questions</h2>
+
+    <select id="difficulty" title="Trivia Questions.">
+      <option value="" disabled selected>Choose Difficulty</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    <div class="middle">
+      <button id="getQuestionButton">Get new question</button>
+    </div>
+    <div id="questions">
+    </div>
+    <div id="answer">
+    </div>
+  </main>
+
+
+  <footer>
+    &copy;<span id="year"></span> | Week 06 - Final Project | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script type="module" src="scripts/w06-final.js"></script>
+</body>
+
+</html>
